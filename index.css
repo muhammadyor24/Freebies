@@ -20,6 +20,12 @@ nav {
     position: sticky;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background: #fff;
 }
 
 .navleft {
@@ -91,7 +97,7 @@ nav {
 
 header {
     padding: 0 100px;
-    height: max-content;
+    height: 100vh;
 
     background-color: #fff;
 }
@@ -99,6 +105,7 @@ header {
 .headerup {
     display: flex;
     align-items: center;
+    gap: 200px;
 }
 
 .headerleft h1 {
@@ -210,49 +217,49 @@ section {
     border-radius: 5px;
 }
 
-.card3{ 
+.card3 {
     border: 1px solid #F53855;
     border-radius: 5px;
 }
 
 .card1 button,
 .card2 button,
-.card3 button{
+.card3 button {
     margin-bottom: 20px;
 }
 
 .card1,
 .card2,
-.card3{
+.card3 {
     height: max-content;
 }
 
-.section2parents p{
+.section2parents p {
     line-height: 50px;
 }
 
-.card1 h3{
+.card1 h3 {
     padding-top: 160px;
     padding-bottom: 20px;
 }
 
-.card2 h3{
+.card2 h3 {
     padding-top: 100px;
     padding-bottom: 20px;
 }
 
-.card3 h3{
+.card3 h3 {
     padding-top: 40px;
     padding-bottom: 20px;
 }
 
-.section2parents img{
+.section2parents img {
     padding-top: 20px;
 }
 
-.section2parents ul{
-    text-align: justify;
-    padding-left: 90px;    
+.section2parents ul {
+    text-align: center;
+    /* padding-left: 20px;     */
 }
 
 .section2parents ul li {
@@ -260,7 +267,7 @@ section {
     line-height: 40px;
 }
 
-.section3{
+.section3 {
     margin-top: 100px;
     height: fit-content;
     align-items: center;
@@ -278,19 +285,19 @@ section {
     line-height: 30px;
 }
 
-.partners{
+.partners {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 }
 
-aside{
+aside {
     padding: 0 100px;
     margin-top: 100px;
     height: fit-content;
 }
 
-.asideup{
+.asideup {
     text-align: center;
     align-items: center;
 }
@@ -306,67 +313,299 @@ aside{
     line-height: 30px;
 }
 
-.comments{
+.comments {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .comment1,
 .comment2,
-.comment3{
+.comment3 {
     border: 1px solid #DDDDDD;
     border-radius: 5px;
 }
 
-.comment1{
+.comment1 {
     border: 1px solid #F53855;
     border-radius: 5px;
 }
 
 .comment1up,
 .comment2up,
-.comment3up{
+.comment3up {
     display: flex;
     align-items: center;
 }
 
 .comment1left,
 .comment2left,
-.comment3left{
+.comment3left {
     padding: 20px 20px;
 }
 
 .comment1center,
 .comment2center,
-.comment3center{
+.comment3center {
     text-align: justify;
-    align-items: center;                                               
+    align-items: center;
 }
 
 .comment1right,
 .comment2right,
-.comment3right{
+.comment3right {
     padding-left: 70px;
     padding-right: 20px;
 }
 
 .comment1down,
 .comment2down,
-.comment3down{
+.comment3down {
     padding: 0px 20px 20px 20px;
 }
 
 .comment1down p,
 .comment2down p,
-.comment3down p{
+.comment3down p {
     line-height: 30px;
+    align-items: normal;
 }
 
-.asidebtns{
+.asidebtns {
     padding: 30px 180px;
-    
+
     float: right;
     gap: 20px;
     display: flex;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 0 100px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.foot1up {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+footer p {
+    line-height: 30px;
+}
+
+@media all and (max-width: 1496px) {
+    .navcenter ul {
+        gap: 17px;
+    }
+
+    #inbtn {
+        padding: 10px 10px;
+    }
+
+    #upbtn {
+        padding: 10px 10px;
+    }
+
+    header {
+        margin-top: 80px;
+        padding: 0 80px;
+        height: max-content;
+    }
+
+    .headerup {
+        padding: 0 80px;
+        flex-direction: column-reverse;
+    }
+
+    .headerleft {
+        padding: 0 80px;
+        text-align: center;
+    }
+
+    .headerdown {
+        padding: 0 80px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        margin-top: 80px;
+        height: max-content;
+    }
+
+    .section1 {
+        padding: 0 80px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .section2parents {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section2parents ul li {
+        display: block;
+    }
+
+    .section3 img {
+        width: 100%;
+    }
+
+    .aside {
+        height: max-content;
+    }
+
+    .comments {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .comment1right {
+        padding: 0 10px 0 35px;
+    }
+
+    .comment2right {
+        padding: 0 10px 0 35px;
+    }
+
+    .comment3right {
+        padding: 0 10px 0 25px;
+    }
+
+    .foot1 img {
+        width: 40px;
+    }
+}
+
+@media all and (max-width: 842px) {
+    .navleft img {
+        width: 18px;
+    }
+
+    nav p {
+        font-size: 12px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+    }
+
+    .navcenter ul {
+        gap: 15px;
+    }
+
+    #inbtn {
+        padding: 7px 7px;
+    }
+
+    #upbtn {
+        padding: 7px 7px;
+    }
+
+    header {
+        margin-top: 60px;
+        padding: 0 60px;
+        height: max-content;
+    }
+
+    .headerup {
+        padding: 0 60px;
+        flex-direction: column-reverse;
+    }
+
+    .headerleft {
+        padding: 0 60px;
+        text-align: center;
+    }
+
+    .headerdown {
+        padding: 0 60px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        margin-top: 60px;
+        height: max-content;
+    }
+
+    .section1 {
+        padding: 0 60px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .section2parents {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section2parents ul li {
+        display: block;
+
+        line-height: 10px;
+        font-size: 14px;
+    }
+
+    .section3 img {
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 60px;
+        height: max-content;
+    }
+
+    .comments {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .comments p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .comment1right {
+        padding: 0 8px 0 30px;
+    }
+
+    .comment2right {
+        padding: 0 8px 0 30px;
+    }
+
+    .comment3right {
+        padding: 0 8px 0 24px;
+    }
+
+    .foot1 img {
+        width: 30px;
+    }
+
+    footer p {
+        font-size: 12px;
+        line-height: 27px;
+    }
+
+    .foot1 p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
 }
