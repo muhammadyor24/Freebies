@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+nav {
+    padding: 0 100px;
+    margin: auto;
+    height: max-content;
+
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navleft {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.navleft img {
+    width: 20px;
+}
+
+.navleft p,
+.navcenter ul {
+    padding: 40px 0 40px 0;
+
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.navright {
+    display: flex;
+    gap: 0;
+}
+
+#inbtn {
+    padding: 10px 30px;
+    color: #0B132A;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+#upbtn {
+    padding: 10px 30px;
+    color: #F53855;
+    background: #fff;
+    border: 1px solid #F53855;
+    border-radius: 25px;
+}
+
+#redbtn {
+    padding: 15px 50px;
+
+    color: #fff;
+    background: #F53838;
+    border: 1px solid #F53855;
+    border-radius: 7px;
+}
+
+#redbtn2 {
+    padding: 10px 30px;
+
+    color: #fff;
+    background: #F53838;
+    border: 1px solid #F53855;
+    border-radius: 25px;
+}
+
+#fcdarkb {
+    color: #0B132A;
+}
+
+#fclightb {
+    color: #4F5665;
+}
+
+header {
+    padding: 0 100px;
+    height: max-content;
+
+    background-color: #fff;
+}
+
+.headerup {
+    display: flex;
+    align-items: center;
+}
+
+.headerleft h1 {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.headerleft p {
+    padding-bottom: 35px;
+    line-height: 30px;
+}
+
+.headerright img {
+    width: 580px;
+    float: right;
+}
+
+.headerdown {
+    padding: 50px 100px 0 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerdown .hddleft,
+.headerdown .hddcenter,
+.headerdown .hddright {
+    padding: 50px;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+section {
+    padding: 0 100px;
+}
+
+.section1 {
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1left img {
+    width: 520px;
+}
+
+.section1 h2 {
+    padding-top: 70px;
+
+    font-size: 43px;
+    line-height: 50px;
+}
+
+.section1 p {
+    line-height: 25px;
+    padding: 20px 0 20px 0;
+}
+
+.section1 ul {
+    list-style: none;
+    align-items: center;
+}
+
+.section1 ul li {
+    padding: 10px;
+    line-height: 25px;
+}
+
+.section1 ul li img {
+    width: 20px;
+}
+
+.section2 {
+    margin-top: 100px;
+}
+
+.section2head {
+    align-items: center;
+    text-align: center;
+}
+
+.section2head h2 {
+    font-size: 33px;
+    padding: 22px;
+}
+
+.section2head p {
+    line-height: 30px;
+}
+
+.section2parents {
+    padding-top: 100px;
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.card1,
+.card2 {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.card3{ 
+    border: 1px solid #F53855;
+    border-radius: 5px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button{
+    margin-bottom: 20px;
+}
+
+.card1,
+.card2,
+.card3{
+    height: max-content;
+}
+
+.section2parents p{
+    line-height: 50px;
+}
+
+.card1 h3{
+    padding-top: 160px;
+    padding-bottom: 20px;
+}
+
+.card2 h3{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.card3 h3{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.section2parents img{
+    padding-top: 20px;
+}
+
+.section2parents ul{
+    text-align: justify;
+    padding-left: 90px;    
+}
+
+.section2parents ul li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.section3{
+    margin-top: 100px;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+}
+
+.section3 h2 {
+    font-size: 33px;
+    line-height: 40px;
+}
+
+.section3 p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.partners{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+}
+
+aside{
+    padding: 0 100px;
+    margin-top: 100px;
+    height: fit-content;
+}
+
+.asideup{
+    text-align: center;
+    align-items: center;
+}
+
+.asideup h2 {
+    font-size: 33px;
+    line-height: 40px;
+}
+
+.asideup p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.comments{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.comment1,
+.comment2,
+.comment3{
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.comment1{
+    border: 1px solid #F53855;
+    border-radius: 5px;
+}
+
+.comment1up,
+.comment2up,
+.comment3up{
+    display: flex;
+    align-items: center;
+}
+
+.comment1left,
+.comment2left,
+.comment3left{
+    padding: 20px 20px;
+}
+
+.comment1center,
+.comment2center,
+.comment3center{
+    text-align: justify;
+    align-items: center;                                               
+}
+
+.comment1right,
+.comment2right,
+.comment3right{
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+.comment1down,
+.comment2down,
+.comment3down{
+    padding: 0px 20px 20px 20px;
+}
+
+.comment1down p,
+.comment2down p,
+.comment3down p{
+    line-height: 30px;
+}
+
+.asidebtns{
+    padding: 30px 180px;
+    
+    float: right;
+    gap: 20px;
+    display: flex;
+}
